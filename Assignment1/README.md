@@ -40,3 +40,7 @@ Response throught Postman<br />
 <img src="https://user-images.githubusercontent.com/86838054/149066423-c9cde0c1-a1d3-4204-b8b7-bdcc72f0d7e0.png" width="80%">
 <br /><br /><br />
 
+# FAQ
+
+1. Why I used a database?
+Ans : In the task, it is mentioned that we need to generate a random Id which must be different every time. So, if we don't have a track of already generated ID's then there might be a chance of generating the same ID's again.
