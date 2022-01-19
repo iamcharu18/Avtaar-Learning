@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assigment 1</title>
+        <style>
+            .container {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Avtaar Learning</h1>
+            <h2>Assignment 1</h2>
+            <form id="formElem">
+                <label for="name">Name :</label>
+                <input
+                    id="nameEle"
+                    name="name"
+                    type="text"
+                    placeholder="Enter Your Name"
+                    required
+                />
+                <br />
+                <br />
+                <button id="submitButton">Submit</button>
+            </form>
+        </div>
+        <script>
+            let submitButtonEl = document.getElementById("submitButton");
+            let nameEl = document.getElementById("nameEle");
+            let formEle = document.getElementById("formElem");
+            console.log(nameEl.value);
+            submitButtonEl.addEventListener("click", function () {
+                // console.log(nameEl.value);
+                document.location.href =
+                    "http://localhost:3000/" + nameEl.value;
+            });
+            formEle.addEventListener("click", function (event) {
+                event.preventDefault();
+            });
+        </script>
+    </body>
+</html>
